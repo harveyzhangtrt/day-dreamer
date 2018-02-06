@@ -1,0 +1,56 @@
+.banner {
+  width: 100%;
+  height: 300px;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: white; }
+
+.banner-content {
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  text-align: center; }
+
+.banner-btn {
+  background-color: rgba(252, 120, 120, 0.8);
+  -webkit-box-shadow: 0 5px 10px rgba(17, 17, 17, 0.4);
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.4);
+  border: 2px solid rgba(252, 120, 120, 0.9);
+  border-radius: 30px;
+  opacity: .8;
+  margin-bottom: 10px; }
+  .banner-btn:hover {
+    background-color: rgba(252, 120, 120, 0.6);
+    border-color: #fc5656;
+    -webkit-box-shadow: 0 0 0.5rem #fc5656;
+    box-shadow: 0 0 0.5rem #fc5656;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%); }
+  .banner-btn:active, .banner-btn:focus {
+    background-color: rgba(252, 120, 120, 0.5) !important;
+    border-color: #fc5656 !important;
+    -webkit-box-shadow: 0 0 1rem #fc5656 !important;
+    box-shadow: 0 0 1rem #fc5656 !important; }
+
+.search {
+  background: rgba(238, 238, 238, 0.8);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(17, 17, 17, 0.4);
+  box-shadow: 0 5px 10px rgba(17, 17, 17, 0.4); }
+  .search:focus {
+    border-color: #fc7878;
+    -webkit-box-shadow: 0 0 0 0.15rem rgba(252, 120, 120, 0.3);
+    box-shadow: 0 0 0 0.15rem rgba(252, 120, 120, 0.3);
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%); }
+
+.banner-appear {
+  opacity: 0.01; }
+
+.banner-appear.banner-appear-active {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out; }

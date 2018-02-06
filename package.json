@@ -1,0 +1,47 @@
+{
+  "name": "muse-musical",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": {
+    "/auth": {
+      "target": "http://localhost:3001"
+    },
+    "/api": {
+      "target": "http://localhost:3001"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "passport": "^0.4.0",
+    "passport-spotify": "^0.3.1",
+    "querystring": "^0.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-motion": "^0.5.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "react-transition-group": "^1.2.1",
+    "redux": "^3.7.2",
+    "redux-form": "^7.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "server": "nodemon server",
+    "start": "node server",
+    "client": "react-scripts start",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.12.1"
+  }
+}

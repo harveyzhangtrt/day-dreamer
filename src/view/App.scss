@@ -1,0 +1,15 @@
+@import "./_global";  
+ 
+body {
+    background: url("./pic/3.jpg") no-repeat fixed;  
+    background-size: cover;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+

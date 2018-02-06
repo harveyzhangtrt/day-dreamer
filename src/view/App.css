@@ -1,0 +1,9 @@
+body {
+  background: url("./pic/3.jpg") no-repeat fixed;
+  background-size: cover; }
+  body a {
+    color: white;
+    text-decoration: none; }
+    body a:hover {
+      color: white;
+      text-decoration: none; }

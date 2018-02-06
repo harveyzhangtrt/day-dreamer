@@ -1,0 +1,42 @@
+@import "../../_global";
+
+.navbar {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    box-shadow: none;
+}
+.header-btn {
+    background-color: rgba($pink, .8);     
+    box-shadow: 0 5px 10px rgba($black, .4);    
+    border: 2px solid $peach;
+    border-radius: 30px;
+    color: $white;
+    // width: 5.5rem;
+    // height: 5.5rem;
+    // border-radius: 50%;
+    opacity: .8;
+    margin-bottom: 10px;
+    &:hover {
+        background-color: rgba($pink, .6); 
+        border-color: rgba($pink, .9);
+        box-shadow: 0 0 .5rem $peach;
+        filter: brightness(120%) ;
+        text-decoration: none;
+    
+    }
+    &:active, &:focus {
+        background-color: rgba($pink, .5) !important; 
+        border-color: $peach !important;
+        box-shadow: 0 0 1rem $peach !important;
+    }
+
+}
+
+.avatar {
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}

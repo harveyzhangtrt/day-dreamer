@@ -1,0 +1,156 @@
+@import "../../_global";
+
+.player {
+	background: rgba($white, 0.4);
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px -5px rgba($black, 1);
+	position: relative;
+	color: white;
+	height: 320px;
+	width: 220px;
+	margin: 10px auto;
+
+	
+	&:hover {
+		background: rgba(222, 222, 222, 0.6);
+		box-shadow: 0 5px 10px -5px rgba($black, 1);
+
+	}
+	.background {
+		width: 200%;
+		height: 200%;
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		background-size: cover;
+		background-position: center center;
+		opacity: .5;
+		filter: blur(5px);
+	}
+	
+	
+	.artwork {
+		width: 80%;
+		padding-top: 80%;
+		background-size: cover;
+		background-position: center center;
+		border-radius: 4px;
+		margin: auto;
+		margin-top: 10%;
+		box-shadow: 0 5px 10px -5px rgba($black, .25);
+		position: relative;
+	}
+	
+	.track-info {
+		width: 100%;
+		margin-top: 25px;
+		margin-right: 15px;
+		text-align: center;
+		position: relative;
+		
+		.name {
+			font-size: 18px;
+			font-weight: 500;
+		}
+		
+		.artist {
+			font-size: 14px;
+			font-weight: 300;
+		}
+		
+		.album {
+			font-size: 12px;
+			opacity: .5;
+		}
+	}
+	
+	.scrubber {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 20%;
+		opacity: .8;
+		transition: opacity .25s ease;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		
+		.scrubber-progress {
+			@include generate-gradient($pink);
+			height: 100%;
+			width: 0%;
+			transition: width .25s ease;
+			pointer-events: none;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+	}
+	
+	.timestamps {
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 20px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		z-index: 2;
+		width: 100%;
+		
+		.time {
+			font-size: 12px;
+		}
+	}
+	
+	.controls {
+		position: absolute; 
+		pointer-events: none;
+		margin: auto;
+		height: 50%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		.button {
+			height: 75px;
+			width: 75px;
+			border: 2px solid $white;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 75px;
+			box-shadow: 0 5px 10px 0px rgba($black, .5);
+			margin: 6% auto;
+			pointer-events: all;
+			
+
+			&:hover{
+				box-shadow: 0 0 15px $pink;			
+				transform: scale(.98);
+				background: rgba($white, .2);
+				
+				.fa {
+					color: $pink;
+				}
+			}
+			&:active {
+				box-shadow: 0 0 15px $pink;
+				filter: hue-rotate(180deg);
+				
+			}
+			
+			.fa {
+				color: $white;
+				font-size: 24px;
+				
+				&.fa-play {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}
